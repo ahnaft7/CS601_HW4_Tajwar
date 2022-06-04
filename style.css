@@ -1,0 +1,104 @@
+body {
+    width: 500px;
+    font-family: sans-serif;
+}
+
+.formContainer {
+    position: relative;
+    margin: 8% auto;
+    min-height: 60%;
+    width: 100%;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: lightgray;
+    padding: 10px 50px 50px 50px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+form {
+    font-size: 20px;
+}
+
+form * {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+}
+
+.formtitle {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+
+input {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.formContainer form input {
+   margin-bottom: 5px;
+   padding: 5px 6px;
+   font-size: 0.8em;
+}
+
+
+input:focus {
+    box-shadow: 0 0 4px rgba(0, 150, 255, 0.5);
+    border: 1px solid rgb(0, 150, 255);;
+}
+
+.resbutton {
+    display: inline-block;
+    background: rgb(103, 137, 149);
+    color: white;
+    margin: 10px 100px;
+    width: 50%;
+    height: 8%;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+}
+
+.subbutton {
+    display: inline-block;
+    background: rgb(56, 179, 221);
+    color: white;
+    margin: 10px 100px;
+    width: 50%;
+    height: 8%;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+button:hover {
+    animation: ani1 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
