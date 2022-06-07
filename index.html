@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="formContainer">
-        <form action="https://bucs601.com/submit.php" method="post" xx="returnvalidateForm()">
+        <form action="https://bucs601.com/submit.php" method="post" onsubmit="return validateForm();">
             <h1 class="title">Simple Form</h1>
             <div class="text">
                 <label class="formtitle" for="firstName">First Name:</label>
@@ -42,8 +42,8 @@
                 <input type="checkbox" name="yellow" id="yellow" value="yellow">
                 <label for="yellow">Yellow</label><br>
             </div>
-            <button class="resbutton" type="reset">Reset</button>
-            <button class="subbutton" type="submit">Submit</button>
+            <button class="resbutton" type="reset" name="reset" value="reset">Reset</button>
+            <button class="subbutton" type="submit" name="submit" value="submit">Submit</button>
         </form>
     </div>
 </body>
